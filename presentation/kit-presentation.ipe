@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20090429144355" modified="D:20130909184329" title="Template for Ipe Presentations" author="My Name"/>
+<info created="D:20090429144355" modified="D:20130910101304" title="Template for Ipe Presentations" author="My Name"/>
 <preamble>\usepackage[utf8]{inputenc}
 \usepackage{amsmath,amssymb}
 \renewcommand{\vec}[1]{\mathaccent&quot;017E {#1}}
@@ -3809,8 +3809,8 @@ h
 <dashstyle name="long dash dotted" value="[12 6 1 6] 0"/>
 <dashstyle name="dense dotted" value="[0.5 0.5] 0"/>
 <dashstyle name="medium dotted" value="[1 1.5] 0"/>
-<textsize name="largebf" value="\bf\large"/>
 <textsize name="verytiny" value="\tiny"/>
+<textsize name="largebf" value="\bf\large"/>
 <textstretch name="normal" value="2.45"/>
 <textstretch name="large" value="2.45"/>
 <textstretch name="small" value="2.2"/>
@@ -3820,8 +3820,8 @@ h
 <textstretch name="huge" value="2.2"/>
 <textstretch name="Huge" value="2.2"/>
 <textstretch name="footnote" value="2"/>
-<textstretch name="largebf" value="2.45"/>
 <textstretch name="verytiny" value="2.3"/>
+<textstretch name="largebf" value="2.45"/>
 <textstyle name="center" begin="\begin{center}" end="\end{center}"/>
 <textstyle name="itemize" begin="\begin{flushleft}\begin{itemize}" end="\end{itemize}\end{flushleft}"/>
 <textstyle name="item" begin="\begin{flushleft}\begin{itemize}\item{}" end="\end{itemize}\end{flushleft}"/>
@@ -3926,7 +3926,7 @@ h
 <text matrix="1 0 0 1 -482 -197" pos="213 427" stroke="black" type="label" width="52.558" height="10.714" depth="0.24" valign="baseline" size="footnote">footnote</text>
 <image matrix="1.41469 0 0 1.41469 -437.252 798.865" rect="46.125 10.75 685.875 489.25" bitmap="1"/>
 <text layer="title" matrix="1 0 0 1 -213 -46" pos="213 427" stroke="black" type="label" width="422.041" height="21.1772" depth="6.116" valign="baseline" size="Large">\bf Template for Ipe Presentations</text>
-<text matrix="1 0 0 1 -213 -123" pos="213 427" stroke="black" type="label" width="247.401" height="13.4618" depth="3.806" valign="bottom" size="small">\bf Lecture $\,\cdot\,$ \today</text>
+<text matrix="1 0 0 1 -213 -123" pos="213 427" stroke="black" type="label" width="257.492" height="13.4618" depth="3.806" valign="bottom" size="small">\bf Lecture $\,\cdot\,$ \today</text>
 <text matrix="1 0 0 1 -213 -141" pos="213 427" stroke="black" type="label" width="79.6686" height="13.0086" depth="3.806" valign="baseline" size="small">\bf My Name</text>
 <group layer="layout">
 <path matrix="1 0 0 1 0 2" stroke="black">
@@ -4040,10 +4040,12 @@ h
 </group>
 <text matrix="1 0 0 1 -213 -77" pos="213 427" stroke="black" type="label" width="188.329" height="21.186" depth="0.286" valign="baseline" size="Large">\bf Title 2nd Row</text>
 </page>
-<page title="Slidetitle" section="">
+<page title="Slide Title" section="">
 <layer name="alpha"/>
 <layer name="layout"/>
+<layer name="beta"/>
 <view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
 <path layer="layout" matrix="1 0 0 1 0 2" stroke="black">
 -39 -12 m
 -10 -12 l
@@ -4128,17 +4130,25 @@ h
 500 456 m
 800 456 l
 </path>
-<text layer="alpha" pin="h" pos="0 440" stroke="black" type="minipage" width="732" height="104.363" depth="92.365" valign="top">Itemize
-    \begin{itemize}
-    \item Item 1
-    \item Item 2
-    \begin{itemize}
-    \item Subitem 1
-    \item Subitem 2
-    \end{itemize}
-    \item Item 3
-    \end{itemize}</text>
-<group pin="h">
+<text layer="alpha" pin="h" pos="0 440" stroke="black" type="minipage" width="732" height="141.135" depth="129.213" valign="top">Settings that can be changed in the document properties
+(Edit$\rightarrow$Document properties or press strg+shift+p):
+\begin{itemize}
+\item change the color of the item bullets
+  \begin{itemize}
+  \item change definition of \textbackslash{itemcolor} (for example to
+    KITgreen)
+  \end{itemize}
+\item change name and title in the footer:
+  \begin{itemize}
+  \item change definition of commands \textbackslash{}name and
+    \textbackslash{}prestitle
+  \end{itemize}
+\item change the language:
+  \begin{itemize}
+  \item comment or uncomment the command \textbackslash{german}
+  \end{itemize}
+\end{itemize}</text>
+<group layer="beta" matrix="1 0 0 1 0 -128" pin="h">
 <path fill="KITblue">
 0 191.08 m
 0 220 l
@@ -4161,5 +4171,6 @@ $O(n^\varepsilon)$ inflexible edges with pairwise distance
 $\Omega(n^{1-\varepsilon})$.
 </text>
 </group>
+<text layer="alpha" matrix="1 0 0 1 0 -288" pin="h" pos="0 440" stroke="black" type="minipage" width="732" height="16.8193" depth="4.5815" valign="top">To modify the slide title, press strg+p.</text>
 </page>
 </ipe>
