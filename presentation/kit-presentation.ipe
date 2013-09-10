@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20090429144355" modified="D:20130910101304" title="Template for Ipe Presentations" author="My Name"/>
+<info created="D:20090429144355" modified="D:20130910104424" title="Template for Ipe Presentations" author="My Name"/>
 <preamble>\usepackage[utf8]{inputenc}
 \usepackage{amsmath,amssymb}
 \renewcommand{\vec}[1]{\mathaccent&quot;017E {#1}}
@@ -3745,7 +3745,7 @@ h
 <symbolsize name="normal" value="9"/>
 <symbolsize name="large" value="12"/>
 <symbolsize name="small" value="6"/>
-<symbolsize name="tiny" value="3.3"/>
+<symbolsize name="tiny" value="4"/>
 <arrowsize name="normal" value="15"/>
 <arrowsize name="large" value="20"/>
 <arrowsize name="small" value="10"/>
@@ -3809,6 +3809,7 @@ h
 <dashstyle name="long dash dotted" value="[12 6 1 6] 0"/>
 <dashstyle name="dense dotted" value="[0.5 0.5] 0"/>
 <dashstyle name="medium dotted" value="[1 1.5] 0"/>
+<dashstyle name="dense dashed" value="[8 3] 0"/>
 <textsize name="verytiny" value="\tiny"/>
 <textsize name="largebf" value="\bf\large"/>
 <textstretch name="normal" value="2.45"/>
@@ -4130,10 +4131,10 @@ h
 500 456 m
 800 456 l
 </path>
-<text layer="alpha" pin="h" pos="0 440" stroke="black" type="minipage" width="732" height="141.135" depth="129.213" valign="top">Settings that can be changed in the document properties
+<text layer="alpha" pin="h" pos="0 440" stroke="black" type="minipage" width="732" height="141.135" depth="129.213" valign="top">Settings that can be changed in the document properties\\
 (Edit$\rightarrow$Document properties or press strg+shift+p):
 \begin{itemize}
-\item change the color of the item bullets
+\item change the color of the item bullets:
   \begin{itemize}
   \item change definition of \textbackslash{itemcolor} (for example to
     KITgreen)
@@ -4172,5 +4173,232 @@ $\Omega(n^{1-\varepsilon})$.
 </text>
 </group>
 <text layer="alpha" matrix="1 0 0 1 0 -288" pin="h" pos="0 440" stroke="black" type="minipage" width="732" height="16.8193" depth="4.5815" valign="top">To modify the slide title, press strg+p.</text>
+</page>
+<page title="Some Tests">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+<group layer="alpha" matrix="1 0 0 1 -112 -160">
+<path stroke="black" fill="lightgray">
+400 416 m
+400 192 l
+528 192 l
+528 416 l
+h
+</path>
+<use matrix="1 0 0 1 32 -32" name="mark/disk(sx)" pos="416 400" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 32 -32" name="mark/disk(sx)" pos="448 400" size="small" stroke="black"/>
+<use matrix="1 0 0 1 -96 -32" name="mark/disk(sx)" pos="512 400" size="large" stroke="black"/>
+<use matrix="1 0 0 1 32 -32" name="mark/disk(sx)" pos="480 400" size="tiny" stroke="black"/>
+<use matrix="1 0 0 1 32 0" name="mark/circle(sx)" pos="416 400" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 32 0" name="mark/circle(sx)" pos="448 400" size="small" stroke="black"/>
+<use matrix="1 0 0 1 -96 0" name="mark/circle(sx)" pos="512 400" size="large" stroke="black"/>
+<use matrix="1 0 0 1 32 0" name="mark/circle(sx)" pos="480 400" size="tiny" stroke="black"/>
+<use matrix="1 0 0 1 32 -64" name="mark/fdisk(sfx)" pos="416 400" size="normal" stroke="black" fill="white"/>
+<use matrix="1 0 0 1 32 -64" name="mark/fdisk(sfx)" pos="448 400" size="small" stroke="black" fill="white"/>
+<use matrix="1 0 0 1 -96 -64" name="mark/fdisk(sfx)" pos="512 400" size="large" stroke="black" fill="white"/>
+<use matrix="1 0 0 1 32 -64" name="mark/fdisk(sfx)" pos="480 400" size="tiny" stroke="black" fill="white"/>
+<use matrix="1 0 0 1 32 -96" name="mark/box(sx)" pos="416 400" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 32 -96" name="mark/box(sx)" pos="448 400" size="small" stroke="black"/>
+<use matrix="1 0 0 1 -96 -96" name="mark/box(sx)" pos="512 400" size="large" stroke="black"/>
+<use matrix="1 0 0 1 32 -96" name="mark/box(sx)" pos="480 400" size="tiny" stroke="black"/>
+<use matrix="1 0 0 1 32 -128" name="mark/square(sx)" pos="416 400" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 32 -128" name="mark/square(sx)" pos="448 400" size="small" stroke="black"/>
+<use matrix="1 0 0 1 -96 -128" name="mark/square(sx)" pos="512 400" size="large" stroke="black"/>
+<use matrix="1 0 0 1 32 -128" name="mark/square(sx)" pos="480 400" size="tiny" stroke="black"/>
+<use matrix="1 0 0 1 32 -160" name="mark/fsquare(sfx)" pos="416 400" size="normal" stroke="black" fill="white"/>
+<use matrix="1 0 0 1 32 -160" name="mark/fsquare(sfx)" pos="448 400" size="small" stroke="black" fill="white"/>
+<use matrix="1 0 0 1 -96 -160" name="mark/fsquare(sfx)" pos="512 400" size="large" stroke="black" fill="white"/>
+<use matrix="1 0 0 1 32 -160" name="mark/fsquare(sfx)" pos="480 400" size="tiny" stroke="black" fill="white"/>
+<use matrix="1 0 0 1 32 -192" name="mark/cross(sx)" pos="416 400" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 32 -192" name="mark/cross(sx)" pos="448 400" size="small" stroke="black"/>
+<use matrix="1 0 0 1 -96 -192" name="mark/cross(sx)" pos="512 400" size="large" stroke="black"/>
+<use matrix="1 0 0 1 32 -192" name="mark/cross(sx)" pos="480 400" size="tiny" stroke="black"/>
+</group>
+<group matrix="1 0 0 1 32 -16">
+<text matrix="1 0 0 1 -208 -250.941" pos="213 427" stroke="black" type="label" width="105.347" height="13.1252" depth="0.286" valign="baseline" size="small">testtext small</text>
+<text matrix="1 0 0 1 -208 -160.105" pos="213 427" stroke="black" type="label" width="175.058" height="20.9704" depth="6.468" valign="baseline" size="Large">testtext Large</text>
+<text matrix="1 0 0 1 -208 -128.835" pos="213 427" stroke="black" type="label" width="239.096" height="25.6828" depth="0.572" valign="baseline" size="LARGE">testtext LARGE</text>
+<text matrix="1 0 0 1 -208 -84.1186" pos="213 427" stroke="black" type="label" width="238.207" height="30.2148" depth="9.306" valign="baseline" size="huge">testtext huge</text>
+<text matrix="1 0 0 1 -208 -33" pos="213 427" stroke="black" type="label" width="294.087" height="36.234" depth="11.176" valign="baseline" size="Huge">testtext Huge</text>
+<text matrix="1 0 0 1 -208 -227.721" pos="213 427" stroke="black" type="label" width="147.149" height="16.2264" depth="0.3675" valign="baseline">testtext normal</text>
+<text matrix="1 0 0 1 -208 -195.764" pos="213 427" stroke="black" type="label" width="153.461" height="19.4628" depth="6.0025" valign="baseline" size="large">testtext large</text>
+<text matrix="1 0 0 1 -208 -290.911" pos="213 427" stroke="black" type="label" width="64.3244" height="9.2736" depth="2.744" valign="baseline" size="tiny">testtext tiny</text>
+<text matrix="1 0 0 1 -208 -271.669" pos="213 427" stroke="black" type="label" width="103.474" height="10.714" depth="0.24" valign="baseline" size="footnote">testtext footnote</text>
+<text matrix="1 0 0 1 -208 -311" pos="213 427" stroke="black" type="label" width="72.8019" height="7.6176" depth="2.254" valign="baseline" size="verytiny">testtext verytiny</text>
+</group>
+<group matrix="1 0 0 1 80 64">
+<path matrix="1 0 0 1 -64 -80" stroke="black" fill="lightgray">
+352 416 m
+432 416 l
+</path>
+<path matrix="1 0 0 1 -64 -96" stroke="black" fill="lightgray" pen="heavier">
+352 416 m
+432 416 l
+</path>
+<path matrix="1 0 0 1 -64 -112" stroke="black" fill="lightgray" pen="fat">
+352 416 m
+432 416 l
+</path>
+<path matrix="1 0 0 1 -64 -128" stroke="black" fill="lightgray" pen="ultrafat">
+352 416 m
+432 416 l
+</path>
+</group>
+<group matrix="1 0 0 1 64 16">
+<path stroke="black" fill="lightgray" arrow="arc/large">
+448 400 m
+480 400 l
+</path>
+<path matrix="1 0 0 1 48 0" stroke="black" fill="lightgray" arrow="arc/normal">
+448 400 m
+480 400 l
+</path>
+<path matrix="1 0 0 1 96 0" stroke="black" fill="lightgray" arrow="arc/small">
+448 400 m
+480 400 l
+</path>
+<path matrix="1 0 0 1 144 0" stroke="black" fill="lightgray" arrow="arc/tiny">
+448 400 m
+480 400 l
+</path>
+<path matrix="1 0 0 1 0 -32" stroke="black" fill="lightgray" arrow="farc/large">
+448 400 m
+480 400 l
+</path>
+<path matrix="1 0 0 1 48 -32" stroke="black" fill="lightgray" arrow="farc/normal">
+448 400 m
+480 400 l
+</path>
+<path matrix="1 0 0 1 96 -32" stroke="black" fill="lightgray" arrow="farc/small">
+448 400 m
+480 400 l
+</path>
+<path matrix="1 0 0 1 144 -32" stroke="black" fill="lightgray" arrow="farc/tiny">
+448 400 m
+480 400 l
+</path>
+<path matrix="1 0 0 1 0 -64" stroke="black" fill="lightgray" arrow="pointed/large">
+448 400 m
+480 400 l
+</path>
+<path matrix="1 0 0 1 48 -64" stroke="black" fill="lightgray" arrow="pointed/normal">
+448 400 m
+480 400 l
+</path>
+<path matrix="1 0 0 1 96 -64" stroke="black" fill="lightgray" arrow="pointed/small">
+448 400 m
+480 400 l
+</path>
+<path matrix="1 0 0 1 144 -64" stroke="black" fill="lightgray" arrow="pointed/tiny">
+448 400 m
+480 400 l
+</path>
+<path matrix="1 0 0 1 0 -96" stroke="black" fill="lightgray" arrow="fpointed/large">
+448 400 m
+480 400 l
+</path>
+<path matrix="1 0 0 1 48 -96" stroke="black" fill="lightgray" arrow="fpointed/normal">
+448 400 m
+480 400 l
+</path>
+<path matrix="1 0 0 1 96 -96" stroke="black" fill="lightgray" arrow="fpointed/small">
+448 400 m
+480 400 l
+</path>
+<path matrix="1 0 0 1 144 -96" stroke="black" fill="lightgray" arrow="fpointed/tiny">
+448 400 m
+480 400 l
+</path>
+<path matrix="1 0 0 1 0 -128" stroke="black" fill="lightgray" arrow="linear/large">
+448 400 m
+480 400 l
+</path>
+<path matrix="1 0 0 1 48 -128" stroke="black" fill="lightgray" arrow="linear/normal">
+448 400 m
+480 400 l
+</path>
+<path matrix="1 0 0 1 96 -128" stroke="black" fill="lightgray" arrow="linear/small">
+448 400 m
+480 400 l
+</path>
+<path matrix="1 0 0 1 144 -128" stroke="black" fill="lightgray" arrow="linear/tiny">
+448 400 m
+480 400 l
+</path>
+<path matrix="1 0 0 1 0 -192" stroke="black" fill="lightgray" arrow="fdouble/large">
+448 400 m
+480 400 l
+</path>
+<path matrix="1 0 0 1 48 -192" stroke="black" fill="lightgray" arrow="fdouble/normal">
+448 400 m
+480 400 l
+</path>
+<path matrix="1 0 0 1 96 -192" stroke="black" fill="lightgray" arrow="fdouble/small">
+448 400 m
+480 400 l
+</path>
+<path matrix="1 0 0 1 144 -192" stroke="black" fill="lightgray" arrow="fdouble/tiny">
+448 400 m
+480 400 l
+</path>
+<path matrix="1 0 0 1 0 -160" stroke="black" fill="lightgray" arrow="double/large">
+448 400 m
+480 400 l
+</path>
+<path matrix="1 0 0 1 48 -160" stroke="black" fill="lightgray" arrow="double/normal">
+448 400 m
+480 400 l
+</path>
+<path matrix="1 0 0 1 96 -160" stroke="black" fill="lightgray" arrow="double/small">
+448 400 m
+480 400 l
+</path>
+<path matrix="1 0 0 1 144 -160" stroke="black" fill="lightgray" arrow="double/tiny">
+448 400 m
+480 400 l
+</path>
+</group>
+<group matrix="1 0 0 1 96 0">
+<path matrix="1 0 0 1 0 -80" stroke="black" dash="dense dashed" pen="heavier">
+400 176 m
+496 176 l
+</path>
+<path matrix="1 0 0 1 0 -16" stroke="black" dash="long dashed" pen="heavier">
+400 176 m
+496 176 l
+</path>
+<path matrix="1 0 0 1 0 -32" stroke="black" dash="long dash dotted" pen="heavier">
+400 176 m
+496 176 l
+</path>
+<path matrix="1 0 0 1 0 -48" stroke="black" dash="dense dotted" pen="heavier">
+400 176 m
+496 176 l
+</path>
+<path matrix="1 0 0 1 0 -64" stroke="black" dash="medium dotted" pen="heavier">
+400 176 m
+496 176 l
+</path>
+<path matrix="1 0 0 1 0 -96" stroke="black" dash="dashed" pen="heavier">
+400 176 m
+496 176 l
+</path>
+<path matrix="1 0 0 1 0 -112" stroke="black" dash="dotted" pen="heavier">
+400 176 m
+496 176 l
+</path>
+<path matrix="1 0 0 1 0 -128" stroke="black" dash="dash dotted" pen="heavier">
+400 176 m
+496 176 l
+</path>
+<path matrix="1 0 0 1 0 -144" stroke="black" dash="dash dot dotted" pen="heavier">
+400 176 m
+496 176 l
+</path>
+<path stroke="black" pen="heavier">
+400 176 m
+496 176 l
+</path>
+</group>
 </page>
 </ipe>
