@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20090429144355" modified="D:20130910104424" title="Template for Ipe Presentations" author="My Name"/>
+<info created="D:20090429144355" modified="D:20130910105916" title="Template for Ipe Presentations" author="My Name"/>
 <preamble>\usepackage[utf8]{inputenc}
 \usepackage{amsmath,amssymb}
 \renewcommand{\vec}[1]{\mathaccent&quot;017E {#1}}
@@ -3928,7 +3928,7 @@ h
 <image matrix="1.41469 0 0 1.41469 -437.252 798.865" rect="46.125 10.75 685.875 489.25" bitmap="1"/>
 <text layer="title" matrix="1 0 0 1 -213 -46" pos="213 427" stroke="black" type="label" width="422.041" height="21.1772" depth="6.116" valign="baseline" size="Large">\bf Template for Ipe Presentations</text>
 <text matrix="1 0 0 1 -213 -123" pos="213 427" stroke="black" type="label" width="257.492" height="13.4618" depth="3.806" valign="bottom" size="small">\bf Lecture $\,\cdot\,$ \today</text>
-<text matrix="1 0 0 1 -213 -141" pos="213 427" stroke="black" type="label" width="79.6686" height="13.0086" depth="3.806" valign="baseline" size="small">\bf My Name</text>
+<text matrix="1 0 0 1 -213 -141" pos="213 427" stroke="black" type="label" width="79.6686" height="13.0086" depth="3.806" valign="baseline" size="small">\bf \name</text>
 <group layer="layout">
 <path matrix="1 0 0 1 0 2" stroke="black">
 -39 -12 m
