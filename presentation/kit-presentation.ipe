@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20090429144355" modified="D:20130910105916" title="Template for Ipe Presentations" author="My Name"/>
+<info created="D:20090429144355" modified="D:20130911142305" title="Template for Ipe Presentations" author="My Name"/>
 <preamble>\usepackage[utf8]{inputenc}
 \usepackage{amsmath,amssymb}
 \renewcommand{\vec}[1]{\mathaccent&quot;017E {#1}}
@@ -2369,6 +2369,8 @@ h
 <path fill="0.137 0.121 0.125" fillrule="wind">
 20.2633 2.84297 m
 21.4668 2.84297 l
+21.4668 3.0456 l
+21.4668 3.2356 l
 21.4668 12.4484 l
 20.2633 12.4484 l
 20.2633 2.84297 l
@@ -2454,6 +2456,8 @@ h
 <path fill="0.137 0.121 0.125" fillrule="wind">
 59.9211 2.84297 m
 61.2016 2.84297 l
+61.2016 3.16325 l
+61.2016 3.44325 l
 61.2016 11.7824 l
 59.9211 11.7824 l
 59.9211 2.84297 l
@@ -2712,6 +2716,8 @@ h
 <path fill="0.137 0.121 0.125" fillrule="wind">
 171.385 2.84297 m
 172.589 2.84297 l
+172.589 3.4104 l
+172.589 4.0526 l
 172.589 12.4484 l
 171.385 12.4484 l
 171.385 2.84297 l
@@ -2945,6 +2951,8 @@ h
 <path fill="0.137 0.121 0.125" fillrule="wind">
 19.873 2.77031 m
 21.0461 2.77031 l
+21.0461 3.26759 l
+21.0461 3.70637 l
 21.0461 12.1309 l
 19.873 12.1309 l
 19.873 2.77031 l
@@ -3129,6 +3137,8 @@ h
 <path fill="0.137 0.121 0.125" fillrule="wind">
 63.0168 2.77031 m
 64.2641 2.77031 l
+64.2641 3.14876 l
+64.2641 3.67604 l
 64.2641 11.4824 l
 63.0168 11.4824 l
 63.0168 2.77031 l
@@ -3580,6 +3590,8 @@ h
 <path fill="0.137 0.121 0.125" fillrule="wind">
 169.064 2.77031 m
 170.237 2.77031 l
+170.237 3.31351 l
+170.237 3.65151 l
 170.237 12.1309 l
 169.064 12.1309 l
 169.064 2.77031 l
