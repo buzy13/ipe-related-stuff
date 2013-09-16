@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20090429144355" modified="D:20130911142305" title="Template for Ipe Presentations" author="My Name"/>
+<info created="D:20090429144355" modified="D:20130916171957" title="Template for Ipe Presentations" author="My Name"/>
 <preamble>\usepackage[utf8]{inputenc}
 \usepackage{amsmath,amssymb}
 \renewcommand{\vec}[1]{\mathaccent&quot;017E {#1}}
@@ -2091,7 +2091,7 @@ h
 h
 </path>
 <text matrix="0.0410872 0 0 0.0410872 627.139 450.083" pos="240 144" stroke="black" type="label" width="2318.8" height="0" depth="0" valign="baseline">\kitlogo</text>
-<text matrix="1 0 0 1 -98 -201.642" pos="98 168" stroke="black" type="minipage" width="497" height="10.7065" depth="0" valign="top" size="verytiny">\name \ -- \prestitle</text>
+<text matrix="1 0 0 1 -98 -201.642" pos="106 168" stroke="black" type="minipage" width="497" height="10.7065" depth="0" valign="top" size="verytiny">\name \ -- \prestitle</text>
 <group matrix="1 0 0 1 129 -9.5">
 <group matrix="0.5 0 0 0.5 265.5 -52.5">
 <path matrix="1 0 0 1 -145 -25" fill="KITblue">
@@ -3924,7 +3924,10 @@ h
 <layer name="title"/>
 <layer name="BACKGROUND"/>
 <layer name="layout"/>
-<view layers="title BACKGROUND" active="BACKGROUND"/>
+<layer name="pagenumbers_format"/>
+<layer name="pagenumbers_dont_count"/>
+<layer name="pagenumbers_page" edit="no"/>
+<view layers="title BACKGROUND" active="title"/>
 <group layer="layout" matrix="1.41706 0 0 1.41706 688.4 883.71">
 <image matrix="1 0 0 1 -108 -64" rect="43.5 14.5 688.5 485.5" bitmap="2"/>
 </group>
@@ -4052,13 +4055,16 @@ h
 <text matrix="1 0 0 1 149 -29.5" transformations="translations" pos="608 -16" stroke="white" type="label" width="105.167" height="13.244" depth="0.176" halign="right" valign="center" size="small">\bf www.kit.edu</text>
 </group>
 <text matrix="1 0 0 1 -213 -77" pos="213 427" stroke="black" type="label" width="188.329" height="21.186" depth="0.286" valign="baseline" size="Large">\bf Title 2nd Row</text>
+<text layer="pagenumbers_format" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="31.6204" height="7.5578" depth="2.277" halign="center" valign="top" size="verytiny">{\bf [page]}</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="5.8604" height="7.5578" depth="0.184" halign="center" valign="top" size="verytiny">{\bf 0}</text>
 </page>
 <page title="Slide Title" section="">
 <layer name="alpha"/>
-<layer name="layout"/>
 <layer name="beta"/>
-<view layers="alpha" active="alpha"/>
-<view layers="alpha beta" active="beta"/>
+<layer name="layout"/>
+<layer name="pagenumbers_page" edit="no"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha beta pagenumbers_page" active="beta"/>
 <path layer="layout" matrix="1 0 0 1 0 2" stroke="black">
 -39 -12 m
 -10 -12 l
@@ -4185,10 +4191,12 @@ $\Omega(n^{1-\varepsilon})$.
 </text>
 </group>
 <text layer="alpha" matrix="1 0 0 1 0 -288" pin="h" pos="0 440" stroke="black" type="minipage" width="732" height="16.8193" depth="4.5815" valign="top">To modify the slide title, press strg+p.</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="5.8604" height="7.5463" depth="0" halign="center" valign="top" size="verytiny">{\bf 1}</text>
 </page>
 <page title="Some Tests">
 <layer name="alpha"/>
-<view layers="alpha" active="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
 <group layer="alpha" matrix="1 0 0 1 -112 -160">
 <path stroke="black" fill="lightgray">
 400 416 m
@@ -4412,5 +4420,6 @@ h
 496 176 l
 </path>
 </group>
+<text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="5.8604" height="7.5463" depth="0" halign="center" valign="top" size="verytiny">{\bf 2}</text>
 </page>
 </ipe>
