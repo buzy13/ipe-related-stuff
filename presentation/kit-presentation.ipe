@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20090429144355" modified="D:20130916171957" title="Template for Ipe Presentations" author="My Name"/>
+<info created="D:20090429144355" modified="D:20131106103017" title="Template for Ipe Presentations" author="My Name"/>
 <preamble>\usepackage[utf8]{inputenc}
 \usepackage{amsmath,amssymb}
 \renewcommand{\vec}[1]{\mathaccent&quot;017E {#1}}
@@ -11,6 +11,7 @@
 \newcommand{\name}{My Name}
 \newcommand{\prestitle}{Template for Ipe Presentations}
 % \german
+
 </preamble>
 <bitmap id="1" width="853" height="638" length="54446" ColorSpace="DeviceRGB" Filter="DCTDecode" BitsPerComponent="8" encoding="base64">
 /9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRof
@@ -2075,7 +2076,7 @@ h
 </ipestyle>
 <ipestyle name="KIT-Presentation">
 <symbol name="Background">
-<group>
+<group matrix="1 0 0 1 2 0">
 <path fill="KITblack15">
 -13 -22 m
 12 0 0 -12 -13 -10 -25 -10 a
@@ -3843,81 +3844,81 @@ h
 <gridsize name="2 pts" value="2"/>
 <gridsize name="3 pts" value="3"/>
 <preamble>
-    \usepackage{color}
-    \usepackage{pgf}
-    \usepackage[utf8]{inputenc}
+\usepackage{color}
+\usepackage{pgf}
+\usepackage[utf8]{inputenc}
 
-    % language settings
-    \newif\ifgerman%
-    \newcommand{\german}{\germantrue}%
-    \newcommand{\kitlogo}{%
-    \ifgerman%
-    \ipesymbol{KITLogoDE}{}{}{}\hspace{950pt}%
-    \else%
-    \ipesymbol{KITLogoEN}{}{}{}\hspace{950pt}%
-    \fi%
-    }%
-    \newcommand{\helmholz}{%
-    \ifgerman%
-    KIT -- Universität des Landes Baden-Württemberg und\\
-    nationales Forschungszentrum in der Helmholtz-Gemeinschaft%
-    \else%
-    KIT -- University of the State of Baden-Wuerttemberg and\\
-    National Laboratory of the Helmholtz Association%
-    \fi%
-    }%
-    \newcommand{\algoinst}{%
-    \ifgerman%
-    {\sc Institut für Theoretische Informatik $\cdot$
+% language settings
+\newif\ifgerman%
+\newcommand{\german}{\germantrue}%
+\newcommand{\kitlogo}{%
+  \ifgerman%
+  \ipesymbol{KITLogoDE}{}{}{}\hspace{950pt}%
+  \else%
+  \ipesymbol{KITLogoEN}{}{}{}\hspace{950pt}%
+  \fi%
+}%
+\newcommand{\helmholz}{%
+  \ifgerman%
+  KIT -- Universität des Landes Baden-Württemberg und\\
+  nationales Forschungszentrum in der Helmholtz-Gemeinschaft%
+  \else%
+  KIT -- University of the State of Baden-Wuerttemberg and\\
+  National Laboratory of the Helmholtz Association%
+  \fi%
+}%
+\newcommand{\algoinst}{%
+  \ifgerman%
+  {\sc Institut für Theoretische Informatik $\cdot$
     Prof. Dr. Dorothea Wagner}%
-    \else%
-    {\sc Institute of Theoretical Informatics $\cdot$
+  \else%
+  {\sc Institute of Theoretical Informatics $\cdot$
     Prof. Dr. Dorothea Wagner}%
-    \fi%
-    }%
-    \newcommand{\algoinstfoot}{%
-    \ifgerman%
-    Institut für Theoretische Informatik\\
-    Prof. Dr. Dorothea Wagner
-    \else%
-    Institute of Theoretical Informatics\\
-    Prof. Dr. Dorothea Wagner%
-    \fi%
-    }%
+  \fi%
+}%
+\newcommand{\algoinstfoot}{%
+  \ifgerman%
+  Institut für Theoretische Informatik\\
+  Prof. Dr. Dorothea Wagner
+  \else%
+  Institute of Theoretical Informatics\\
+  Prof. Dr. Dorothea Wagner%
+  \fi%
+}%
 
-    \renewcommand{\familydefault}{\sfdefault}
-    \usepackage[scaled=.92]{helvet}
-    \usepackage[EULERGREEK,eulergreek]{sansmath}
-    \sansmath
-    % \usepackage[scaled=.92]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[scaled=.92]{helvet}
+\usepackage[EULERGREEK,eulergreek]{sansmath}
+\sansmath
+% \usepackage[scaled=.92]{helvet}
 
-    % \renewcommand{\familydefault}{\sfdefault}
-    % \def\rmdefault{phv}
-    % \DeclareSymbolFont{operators}{OT1}{phv}{m}{n}
-    % \DeclareSymbolFont{letters}{OT1}{phv}{m}{it}
-    % \DeclareSymbolFont{bold}{OT1}{phv}{bx}{n}
-    % \DeclareSymbolFont{italic}{OT1}{phv}{m}{it}
+% \renewcommand{\familydefault}{\sfdefault}
+% \def\rmdefault{phv}
+% \DeclareSymbolFont{operators}{OT1}{phv}{m}{n}
+% \DeclareSymbolFont{letters}{OT1}{phv}{m}{it}
+% \DeclareSymbolFont{bold}{OT1}{phv}{bx}{n}
+% \DeclareSymbolFont{italic}{OT1}{phv}{m}{it}
 
-    \makeatletter
-    \def\@listI{
-    \leftmargin 1.5em
-    \itemsep 0.2em
-    \parsep 0.2em
-    \topsep 0.2em
-    \partopsep 0.2em}
-    \def\@listii{
-    \leftmargin 1em
-    \itemsep 0.1em
-    \parsep 0.1em
-    \topsep 0.1em
-    \partopsep 0.1em}
-    \makeatother
+\makeatletter
+\def\@listI{
+  \leftmargin 1.5em
+  \itemsep 0.2em
+  \parsep 0.2em
+  \topsep 0.2em
+  \partopsep 0.2em}
+\def\@listii{
+  \leftmargin 1em
+  \itemsep 0.1em
+  \parsep 0.1em
+  \topsep 0.1em
+  \partopsep 0.1em}
+\makeatother
 
-    \def\labelitemi{\raisebox{0.5ex}{\hbox to 0.6em{\scalebox{1.3}{\ipesymbol{KITItem(f)}{}{\itemcolor}{}}}}}
+\def\labelitemi{\raisebox{0.5ex}{\hbox to 0.6em{\scalebox{1.3}{\ipesymbol{KITItem(f)}{}{\itemcolor}{}}}}}
 
-    \def\labelitemii{\raisebox{0.5ex}{\hbox to 0.4em{\scalebox{1.1}{\ipesymbol{KITItem(f)}{}{\itemcolor}{}}}}}
+\def\labelitemii{\raisebox{0.5ex}{\hbox to 0.4em{\scalebox{1.1}{\ipesymbol{KITItem(f)}{}{\itemcolor}{}}}}}
   </preamble>
-<layout paper="800 600" origin="34 69" frame="732 440" crop="no"/>
+<layout paper="800 600" origin="32 69" frame="736 440" crop="no"/>
 <titlestyle pos="0 475" size="largebf" color="black"  valign="baseline"/>
 </ipestyle>
 <page>
@@ -3942,7 +3943,7 @@ h
 <text matrix="1 0 0 1 -482 -197" pos="213 427" stroke="black" type="label" width="52.558" height="10.714" depth="0.24" valign="baseline" size="footnote">footnote</text>
 <image matrix="1.41469 0 0 1.41469 -437.252 798.865" rect="46.125 10.75 685.875 489.25" bitmap="1"/>
 <text layer="title" matrix="1 0 0 1 -213 -46" pos="213 427" stroke="black" type="label" width="422.041" height="21.1772" depth="6.116" valign="baseline" size="Large">\bf Template for Ipe Presentations</text>
-<text matrix="1 0 0 1 -213 -123" pos="213 427" stroke="black" type="label" width="257.492" height="13.4618" depth="3.806" valign="bottom" size="small">\bf Lecture $\,\cdot\,$ \today</text>
+<text matrix="1 0 0 1 -213 -123" pos="213 427" stroke="black" type="label" width="241.993" height="13.0064" depth="3.036" valign="bottom" size="small">\bf Lecture $\,\cdot\,$ \today</text>
 <text matrix="1 0 0 1 -213 -141" pos="213 427" stroke="black" type="label" width="79.6686" height="13.0086" depth="3.806" valign="baseline" size="small">\bf \name</text>
 <group layer="layout">
 <path matrix="1 0 0 1 0 2" stroke="black">
@@ -4027,7 +4028,7 @@ h
 </path>
 </group>
 <text matrix="1 0 0 1 -480 -231" pos="213 427" stroke="black" type="label" width="36.2066" height="7.6176" depth="2.254" valign="baseline" size="verytiny">verytiny</text>
-<group layer="BACKGROUND">
+<group layer="BACKGROUND" matrix="1 0 0 1 2 0">
 <path fill="KITblack50">
 -28 212 m
 760 212 l
@@ -4149,7 +4150,7 @@ h
 500 456 m
 800 456 l
 </path>
-<text layer="alpha" pin="h" pos="0 440" stroke="black" type="minipage" width="732" height="141.135" depth="129.213" valign="top">Settings that can be changed in the document properties\\
+<text layer="alpha" pin="h" pos="0 440" stroke="black" type="minipage" width="736" height="141.135" depth="129.213" valign="top">Settings that can be changed in the document properties\\
 (Edit$\rightarrow$Document properties or press strg+shift+p):
 \begin{itemize}
 \item change the color of the item bullets:
@@ -4167,30 +4168,30 @@ h
   \item comment or uncomment the command \textbackslash{german}
   \end{itemize}
 \end{itemize}</text>
-<group layer="beta" matrix="1 0 0 1 0 -128" pin="h">
+<group layer="beta" pin="h">
 <path fill="KITblue">
-0 191.08 m
-0 220 l
-722 220 l
-727 220 732 215 732 210 c
-732 191.08 l
+0 63.0802 m
+0 92 l
+726 92 l
+731 92 736 87 736 82 c
+736 63.0802 l
 h
 </path>
 <path fill="KITblue15">
-732 191.08 m
-732 129.286 l
-10 129.286 l
-5 129.286 0 134.286 0 139.286 c
-0 191.08 l
+736 63.0802 m
+736 1.28581 l
+10 1.28581 l
+5 1.28581 0 6.28581 0 11.2858 c
+0 63.0802 l
 h
 </path>
-<text pos="6.00005 214" stroke="white" type="minipage" width="720" height="14.4133" depth="2.1805" valign="top">Theorem</text>
-<text pos="6.00005 185.08" stroke="black" type="minipage" width="720" height="31.5903" depth="19.404" valign="top">\textsc{FlexDraw} is NP-complete even for instances of size $n$ with
+<text transformations="translations" pos="6.00005 85.9999" stroke="white" type="minipage" width="724" height="14.4133" depth="2.1805" valign="top">Theorem</text>
+<text transformations="translations" pos="6.00005 57.0801" stroke="black" type="minipage" width="724" height="31.5903" depth="19.404" valign="top">\textsc{FlexDraw} is NP-complete even for instances of size $n$ with
 $O(n^\varepsilon)$ inflexible edges with pairwise distance
 $\Omega(n^{1-\varepsilon})$.
 </text>
 </group>
-<text layer="alpha" matrix="1 0 0 1 0 -288" pin="h" pos="0 440" stroke="black" type="minipage" width="732" height="16.8193" depth="4.5815" valign="top">To modify the slide title, press strg+p.</text>
+<text layer="alpha" matrix="1 0 0 1 0 -288" pin="h" pos="0 440" stroke="black" type="minipage" width="736" height="16.8193" depth="4.5815" valign="top">To modify the slide title, press strg+p.</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="5.8604" height="7.5463" depth="0" halign="center" valign="top" size="verytiny">{\bf 1}</text>
 </page>
 <page title="Some Tests">
