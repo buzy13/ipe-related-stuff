@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20090429144355" modified="D:20131108132020" title="Template for Ipe Presentations" author="My Name"/>
+<info created="D:20090429144355" modified="D:20131108135624" title="Template for Ipe Presentations" author="My Name"/>
 <preamble>\usepackage[utf8]{inputenc}
-\usepackage{amsmath,amssymb}
-\renewcommand{\vec}[1]{\mathaccent&quot;017E {#1}}
+  \usepackage{amsmath,amssymb}
+  \renewcommand{\vec}[1]{\mathaccent&quot;017E {#1}}
 
-% settings %%%%%%%%%%%%%%%
-\newcommand{\itemcolor}{KITblue}
-\newcommand{\name}{My Name}
-\newcommand{\prestitle}{Template for Ipe Presentations}
-% \german
+  % settings %%%%%%%%%%%%%%%
+  \newcommand{\itemcolor}{KITblue}
+  \newcommand{\name}{My Name}
+  \newcommand{\prestitle}{Template for Ipe Presentations}
+  % \german
 
-</preamble>
+  </preamble>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -243,6 +243,61 @@ h
 <ipestyle name="KIT-Presentation">
 <symbol name="Background">
 <group matrix="1 0 0 1 2 0">
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITgreen"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITgreen70"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITgreen50"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITgreen30"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITgreen15"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITblue"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITblue70"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITblue50"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITblue30"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITblue15"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITblack"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITblack70"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITblack50"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITblack30"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITblack15"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITpalegreen"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITpalegreen70"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITpalegreen50"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITpalegreen30"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITpalegreen15"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITyellow"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITyellow70"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITyellow50"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITyellow30"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITyellow15"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITorange"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITorange70"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITorange50"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITorange30"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITorange15"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITbrown"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITbrown70"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITbrown50"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITbrown30"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITbrown15"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITred"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITred70"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITred50"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITred30"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITred15"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITlilac"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITlilac70"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITlilac50"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITlilac30"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITlilac15"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITcyanblue"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITcyanblue70"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITcyanblue50"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITcyanblue30"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITcyanblue15"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITseablue"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITseablue70"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITseablue50"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITseablue30"/>
+<use name="mark/disk(sx)" pos="128 -40" size="normal" stroke="KITseablue15"/>
 <path fill="KITblack15">
 -13 -22 m
 12 0 0 -12 -13 -10 -25 -10 a
@@ -359,7 +414,7 @@ h
 </group>
 <text matrix="1 0 0 1 -146 -7.60325" pos="719 -26" stroke="black" type="minipage" width="165" height="17.6295" depth="6.164" valign="top" size="verytiny">\algoinstfoot
 
-      </text>
+	</text>
 </group>
 </symbol>
 <symbol name="KITItem(f)">
@@ -1929,21 +1984,21 @@ h
 <arrowsize name="large" value="20"/>
 <arrowsize name="small" value="10"/>
 <arrowsize name="tiny" value="6"/>
-<color name="KITblack15" value="0.85"/>
-<color name="KITblue" value="0.274 0.392 0.666"/>
-<color name="KITblack50" value="0.5"/>
 <color name="KITgreen" value="0 0.588 0.509"/>
 <color name="KITgreen70" value="0.3 0.711 0.656"/>
 <color name="KITgreen50" value="0.5 0.794 0.754"/>
 <color name="KITgreen30" value="0.7 0.876 0.852"/>
 <color name="KITgreen15" value="0.85 0.938 0.926"/>
+<color name="KITblue" value="0.274 0.392 0.666"/>
 <color name="KITblue70" value="0.492 0.574 0.766"/>
 <color name="KITblue50" value="0.637 0.696 0.833"/>
 <color name="KITblue30" value="0.782 0.817 0.9"/>
 <color name="KITblue15" value="0.891 0.908 0.95"/>
 <color name="KITblack" value="0"/>
 <color name="KITblack70" value="0.3"/>
+<color name="KITblack50" value="0.5"/>
 <color name="KITblack30" value="0.7"/>
+<color name="KITblack15" value="0.85"/>
 <color name="KITpalegreen" value="0.509 0.745 0.235"/>
 <color name="KITpalegreen70" value="0.656 0.821 0.464"/>
 <color name="KITpalegreen50" value="0.754 0.872 0.617"/>
@@ -2010,80 +2065,80 @@ h
 <gridsize name="2 pts" value="2"/>
 <gridsize name="3 pts" value="3"/>
 <preamble>
-\usepackage{color}
-\usepackage{pgf}
-\usepackage[utf8]{inputenc}
+      \usepackage{color}
+      \usepackage{pgf}
+      \usepackage[utf8]{inputenc}
 
-% language settings
-\newif\ifgerman%
-\newcommand{\german}{\germantrue}%
-\newcommand{\kitlogo}{%
-  \ifgerman%
-  \ipesymbol{KITLogoDE}{}{}{}\hspace{950pt}%
-  \else%
-  \ipesymbol{KITLogoEN}{}{}{}\hspace{950pt}%
-  \fi%
-}%
-\newcommand{\helmholz}{%
-  \ifgerman%
-  KIT -- Universität des Landes Baden-Württemberg und\\
-  nationales Forschungszentrum in der Helmholtz-Gemeinschaft%
-  \else%
-  KIT -- University of the State of Baden-Wuerttemberg and\\
-  National Laboratory of the Helmholtz Association%
-  \fi%
-}%
-\newcommand{\algoinst}{%
-  \ifgerman%
-  {\sc Institut für Theoretische Informatik $\cdot$
-    Prof. Dr. Dorothea Wagner}%
-  \else%
-  {\sc Institute of Theoretical Informatics $\cdot$
-    Prof. Dr. Dorothea Wagner}%
-  \fi%
-}%
-\newcommand{\algoinstfoot}{%
-  \ifgerman%
-  Institut für Theoretische Informatik\\
-  Prof. Dr. Dorothea Wagner
-  \else%
-  Institute of Theoretical Informatics\\
-  Prof. Dr. Dorothea Wagner%
-  \fi%
-}%
+      % language settings
+      \newif\ifgerman%
+      \newcommand{\german}{\germantrue}%
+      \newcommand{\kitlogo}{%
+      \ifgerman%
+      \ipesymbol{KITLogoDE}{}{}{}\hspace{950pt}%
+      \else%
+      \ipesymbol{KITLogoEN}{}{}{}\hspace{950pt}%
+      \fi%
+      }%
+      \newcommand{\helmholz}{%
+      \ifgerman%
+      KIT -- Universität des Landes Baden-Württemberg und\\
+      nationales Forschungszentrum in der Helmholtz-Gemeinschaft%
+      \else%
+      KIT -- University of the State of Baden-Wuerttemberg and\\
+      National Laboratory of the Helmholtz Association%
+      \fi%
+      }%
+      \newcommand{\algoinst}{%
+      \ifgerman%
+      {\sc Institut für Theoretische Informatik $\cdot$
+      Prof. Dr. Dorothea Wagner}%
+      \else%
+      {\sc Institute of Theoretical Informatics $\cdot$
+      Prof. Dr. Dorothea Wagner}%
+      \fi%
+      }%
+      \newcommand{\algoinstfoot}{%
+      \ifgerman%
+      Institut für Theoretische Informatik\\
+      Prof. Dr. Dorothea Wagner
+      \else%
+      Institute of Theoretical Informatics\\
+      Prof. Dr. Dorothea Wagner%
+      \fi%
+      }%
 
-\renewcommand{\familydefault}{\sfdefault}
-\usepackage[scaled=.92]{helvet}
-\usepackage[EULERGREEK,eulergreek]{sansmath}
-\sansmath
-% \usepackage[scaled=.92]{helvet}
+      \renewcommand{\familydefault}{\sfdefault}
+      \usepackage[scaled=.92]{helvet}
+      \usepackage[EULERGREEK,eulergreek]{sansmath}
+      \sansmath
+      % \usepackage[scaled=.92]{helvet}
 
-% \renewcommand{\familydefault}{\sfdefault}
-% \def\rmdefault{phv}
-% \DeclareSymbolFont{operators}{OT1}{phv}{m}{n}
-% \DeclareSymbolFont{letters}{OT1}{phv}{m}{it}
-% \DeclareSymbolFont{bold}{OT1}{phv}{bx}{n}
-% \DeclareSymbolFont{italic}{OT1}{phv}{m}{it}
+      % \renewcommand{\familydefault}{\sfdefault}
+      % \def\rmdefault{phv}
+      % \DeclareSymbolFont{operators}{OT1}{phv}{m}{n}
+      % \DeclareSymbolFont{letters}{OT1}{phv}{m}{it}
+      % \DeclareSymbolFont{bold}{OT1}{phv}{bx}{n}
+      % \DeclareSymbolFont{italic}{OT1}{phv}{m}{it}
 
-\makeatletter
-\def\@listI{
-  \leftmargin 1.5em
-  \itemsep 0.2em
-  \parsep 0.2em
-  \topsep 0.2em
-  \partopsep 0.2em}
-\def\@listii{
-  \leftmargin 1em
-  \itemsep 0.1em
-  \parsep 0.1em
-  \topsep 0.1em
-  \partopsep 0.1em}
-\makeatother
+      \makeatletter
+      \def\@listI{
+      \leftmargin 1.5em
+      \itemsep 0.2em
+      \parsep 0.2em
+      \topsep 0.2em
+      \partopsep 0.2em}
+      \def\@listii{
+      \leftmargin 1em
+      \itemsep 0.1em
+      \parsep 0.1em
+      \topsep 0.1em
+      \partopsep 0.1em}
+      \makeatother
 
-\def\labelitemi{\raisebox{0.5ex}{\hbox to 0.6em{\scalebox{1.3}{\ipesymbol{KITItem(f)}{}{\itemcolor}{}}}}}
+      \def\labelitemi{\raisebox{0.5ex}{\hbox to 0.6em{\scalebox{1.3}{\ipesymbol{KITItem(f)}{}{\itemcolor}{}}}}}
 
-\def\labelitemii{\raisebox{0.5ex}{\hbox to 0.4em{\scalebox{1.1}{\ipesymbol{KITItem(f)}{}{\itemcolor}{}}}}}
-  </preamble>
+      \def\labelitemii{\raisebox{0.5ex}{\hbox to 0.4em{\scalebox{1.1}{\ipesymbol{KITItem(f)}{}{\itemcolor}{}}}}}
+    </preamble>
 <layout paper="800 600" origin="32 69" frame="736 440" crop="no"/>
 <titlestyle pos="0 475" size="largebf" color="black"  valign="baseline"/>
 </ipestyle>
@@ -2131,28 +2186,30 @@ h
 <page title="Slide Title" section="">
 <layer name="alpha"/>
 <layer name="beta"/>
+<layer name="gamma"/>
 <layer name="pagenumbers_page" edit="no"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha beta pagenumbers_page" active="beta"/>
+<view layers="alpha gamma pagenumbers_page" active="gamma"/>
 <text layer="alpha" pin="h" pos="0 440" stroke="black" type="minipage" width="736" height="141.135" depth="129.213" valign="top">Settings that can be changed in the document properties\\
-(Edit$\rightarrow$Document properties or press strg+shift+p):
-\begin{itemize}
-\item change the color of the item bullets:
-  \begin{itemize}
-  \item change definition of \textbackslash{itemcolor} (for example to
+    (Edit$\rightarrow$Document properties or press Ctrl+Shift+P):
+    \begin{itemize}
+    \item change the color of the item bullets:
+    \begin{itemize}
+    \item change definition of \textbackslash{itemcolor} (for example to
     KITgreen)
-  \end{itemize}
-\item change name and title in the footer:
-  \begin{itemize}
-  \item change definition of commands \textbackslash{}name and
+    \end{itemize}
+    \item change name and title in the footer:
+    \begin{itemize}
+    \item change definition of commands \textbackslash{}name and
     \textbackslash{}prestitle
-  \end{itemize}
-\item change the language:
-  \begin{itemize}
-  \item comment or uncomment the command \textbackslash{german}
-  \end{itemize}
-\end{itemize}</text>
-<group layer="beta" pin="h">
+    \end{itemize}
+    \item change the language:
+    \begin{itemize}
+    \item comment or uncomment the command \textbackslash{german}
+    \end{itemize}
+    \end{itemize}</text>
+<group layer="beta" matrix="1 0 0 1 0 32" pin="h">
 <path fill="KITblue">
 0 63.0802 m
 0 92 l
@@ -2171,11 +2228,20 @@ h
 </path>
 <text transformations="translations" pos="6.00005 85.9999" stroke="white" type="minipage" width="724" height="14.4133" depth="2.1805" valign="top">Theorem</text>
 <text transformations="translations" pos="6.00005 57.0801" stroke="black" type="minipage" width="724" height="31.5903" depth="19.404" valign="top">\textsc{FlexDraw} is NP-complete even for instances of size $n$ with
-$O(n^\varepsilon)$ inflexible edges with pairwise distance
-$\Omega(n^{1-\varepsilon})$.
-</text>
+      $O(n^\varepsilon)$ inflexible edges with pairwise distance
+      $\Omega(n^{1-\varepsilon})$.
+      </text>
 </group>
-<text layer="alpha" matrix="1 0 0 1 0 -288" pin="h" pos="0 440" stroke="black" type="minipage" width="736" height="16.8193" depth="4.5815" valign="top">To modify the slide title, press strg+p.</text>
+<text layer="alpha" matrix="1 0 0 1 0 -282" pin="h" pos="0 440" stroke="black" type="minipage" width="736" height="16.7972" depth="4.557" valign="top">To modify the slide title, press Ctrl+P.</text>
+<text layer="beta" matrix="1 0 0 1 507.228 -95.4874" transformations="translations" pos="224 112" stroke="black" type="label" width="315.187" height="13.112" depth="3.784" halign="right" valign="baseline" size="small">box created with the presentation ipelet</text>
+<text matrix="1 0 0 1 507.228 -116.643" transformations="translations" pos="224 112" stroke="black" type="label" width="641.656" height="10.81" depth="3.26" halign="right" valign="baseline" size="footnote">http://lamut.informatik.uni-wuerzburg.de/mediawiki/ipe7/index.php/Graph\_Ipelet\#Presentation\_Ipelet</text>
+<text layer="gamma" matrix="1 0 0 1 -223.772 -60.4874" transformations="translations" pos="224 112" stroke="black" type="label" width="415.507" height="13.123" depth="4.026" valign="baseline" size="small">page numbers created with the Pagenumbers Ipelet</text>
+<text matrix="1 0 0 1 -223.772 -80.643" transformations="translations" pos="224 112" stroke="black" type="label" width="559.974" height="10.81" depth="3.26" valign="baseline" size="footnote">http://lamut.informatik.uni-wuerzburg.de/mediawiki/ipe7/index.php/Pagenumbers\_Ipelet</text>
+<path stroke="black" pen="heavier" arrow="normal/normal">
+-1.78204 49.5567 m
+-18.5764 30.261
+-12.8592 -27.6261 s
+</path>
 <text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="5.8604" height="7.5463" depth="0" halign="center" valign="top" size="verytiny">{\bf 1}</text>
 </page>
 <page title="Some Tests">
