@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20090429144355" modified="D:20131108135624" title="Template for Ipe Presentations" author="My Name"/>
+<info created="D:20090429144355" modified="D:20131108152913" title="Template for Ipe Presentations" author="My Name"/>
 <preamble>\usepackage[utf8]{inputenc}
   \usepackage{amsmath,amssymb}
   \renewcommand{\vec}[1]{\mathaccent&quot;017E {#1}}
