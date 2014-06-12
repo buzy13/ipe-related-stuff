@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20090429144355" modified="D:20131108152913" title="Template for Ipe Presentations" author="My Name"/>
+<info created="D:20090429144355" modified="D:20140612165455" title="Template for Ipe Presentations" author="My Name"/>
 <preamble>\usepackage[utf8]{inputenc}
   \usepackage{amsmath,amssymb}
   \renewcommand{\vec}[1]{\mathaccent&quot;017E {#1}}
@@ -414,7 +414,7 @@ h
 </group>
 <text matrix="1 0 0 1 -146 -7.60325" pos="719 -26" stroke="black" type="minipage" width="165" height="17.6295" depth="6.164" valign="top" size="verytiny">\algoinstfoot
 
-	</text>
+      </text>
 </group>
 </symbol>
 <symbol name="KITItem(f)">
@@ -1972,6 +1972,106 @@ h
 </path>
 </group>
 </symbol>
+<symbol name="deco/KIT box [blue]">
+<group matrix="1 0 0 1 776 -104">
+<path stroke="black" fill="KITblue15">
+0 440 m
+728 440 l
+8 0 0 -8 728 432 736 432 a
+736 288 l
+8 288 l
+8 0 0 -8 8 296 0 296 a
+h
+</path>
+<path stroke="black">
+8 296 m
+8 432 l
+728 432 l
+728 296 l
+h
+</path>
+</group>
+</symbol>
+<symbol name="deco/KIT box [red]">
+<group matrix="1 0 0 1 776 -104">
+<path stroke="black" fill="KITred15">
+0 440 m
+728 440 l
+8 0 0 -8 728 432 736 432 a
+736 288 l
+8 288 l
+8 0 0 -8 8 296 0 296 a
+h
+</path>
+<path stroke="black">
+8 296 m
+8 432 l
+728 432 l
+728 296 l
+h
+</path>
+</group>
+</symbol>
+<symbol name="deco/KIT box [palegreen]">
+<group matrix="1 0 0 1 776 -104">
+<path stroke="black" fill="KITpalegreen15">
+0 440 m
+728 440 l
+8 0 0 -8 728 432 736 432 a
+736 288 l
+8 288 l
+8 0 0 -8 8 296 0 296 a
+h
+</path>
+<path stroke="black">
+8 296 m
+8 432 l
+728 432 l
+728 296 l
+h
+</path>
+</group>
+</symbol>
+<symbol name="deco/KIT box [yellow]">
+<group matrix="1 0 0 1 776 -104">
+<path stroke="black" fill="KITyellow15">
+0 440 m
+728 440 l
+8 0 0 -8 728 432 736 432 a
+736 288 l
+8 288 l
+8 0 0 -8 8 296 0 296 a
+h
+</path>
+<path stroke="black">
+8 296 m
+8 432 l
+728 432 l
+728 296 l
+h
+</path>
+</group>
+</symbol>
+<symbol name="deco/KIT box [green]">
+<group matrix="1 0 0 1 776 -104">
+<path stroke="black" fill="KITgreen15">
+0 440 m
+728 440 l
+8 0 0 -8 728 432 736 432 a
+736 288 l
+8 288 l
+8 0 0 -8 8 296 0 296 a
+h
+</path>
+<path stroke="black">
+8 296 m
+8 432 l
+728 432 l
+728 296 l
+h
+</path>
+</group>
+</symbol>
 <pen name="normal" value="1.2"/>
 <pen name="heavier" value="2.4"/>
 <pen name="fat" value="3.6"/>
@@ -2065,80 +2165,80 @@ h
 <gridsize name="2 pts" value="2"/>
 <gridsize name="3 pts" value="3"/>
 <preamble>
-      \usepackage{color}
-      \usepackage{pgf}
-      \usepackage[utf8]{inputenc}
+    \usepackage{color}
+    \usepackage{pgf}
+    \usepackage[utf8]{inputenc}
 
-      % language settings
-      \newif\ifgerman%
-      \newcommand{\german}{\germantrue}%
-      \newcommand{\kitlogo}{%
-      \ifgerman%
-      \ipesymbol{KITLogoDE}{}{}{}\hspace{950pt}%
-      \else%
-      \ipesymbol{KITLogoEN}{}{}{}\hspace{950pt}%
-      \fi%
-      }%
-      \newcommand{\helmholz}{%
-      \ifgerman%
-      KIT -- Universität des Landes Baden-Württemberg und\\
-      nationales Forschungszentrum in der Helmholtz-Gemeinschaft%
-      \else%
-      KIT -- University of the State of Baden-Wuerttemberg and\\
-      National Laboratory of the Helmholtz Association%
-      \fi%
-      }%
-      \newcommand{\algoinst}{%
-      \ifgerman%
-      {\sc Institut für Theoretische Informatik $\cdot$
-      Prof. Dr. Dorothea Wagner}%
-      \else%
-      {\sc Institute of Theoretical Informatics $\cdot$
-      Prof. Dr. Dorothea Wagner}%
-      \fi%
-      }%
-      \newcommand{\algoinstfoot}{%
-      \ifgerman%
-      Institut für Theoretische Informatik\\
-      Prof. Dr. Dorothea Wagner
-      \else%
-      Institute of Theoretical Informatics\\
-      Prof. Dr. Dorothea Wagner%
-      \fi%
-      }%
+    % language settings
+    \newif\ifgerman%
+    \newcommand{\german}{\germantrue}%
+    \newcommand{\kitlogo}{%
+    \ifgerman%
+    \ipesymbol{KITLogoDE}{}{}{}\hspace{950pt}%
+    \else%
+    \ipesymbol{KITLogoEN}{}{}{}\hspace{950pt}%
+    \fi%
+    }%
+    \newcommand{\helmholz}{%
+    \ifgerman%
+    KIT -- Universität des Landes Baden-Württemberg und\\
+    nationales Forschungszentrum in der Helmholtz-Gemeinschaft%
+    \else%
+    KIT -- University of the State of Baden-Wuerttemberg and\\
+    National Laboratory of the Helmholtz Association%
+    \fi%
+    }%
+    \newcommand{\algoinst}{%
+    \ifgerman%
+    {\sc Institut für Theoretische Informatik $\cdot$
+    Prof. Dr. Dorothea Wagner}%
+    \else%
+    {\sc Institute of Theoretical Informatics $\cdot$
+    Prof. Dr. Dorothea Wagner}%
+    \fi%
+    }%
+    \newcommand{\algoinstfoot}{%
+    \ifgerman%
+    Institut für Theoretische Informatik\\
+    Prof. Dr. Dorothea Wagner
+    \else%
+    Institute of Theoretical Informatics\\
+    Prof. Dr. Dorothea Wagner%
+    \fi%
+    }%
 
-      \renewcommand{\familydefault}{\sfdefault}
-      \usepackage[scaled=.92]{helvet}
-      \usepackage[EULERGREEK,eulergreek]{sansmath}
-      \sansmath
-      % \usepackage[scaled=.92]{helvet}
+    \renewcommand{\familydefault}{\sfdefault}
+    \usepackage[scaled=.92]{helvet}
+    \usepackage[EULERGREEK,eulergreek]{sansmath}
+    \sansmath
+    % \usepackage[scaled=.92]{helvet}
 
-      % \renewcommand{\familydefault}{\sfdefault}
-      % \def\rmdefault{phv}
-      % \DeclareSymbolFont{operators}{OT1}{phv}{m}{n}
-      % \DeclareSymbolFont{letters}{OT1}{phv}{m}{it}
-      % \DeclareSymbolFont{bold}{OT1}{phv}{bx}{n}
-      % \DeclareSymbolFont{italic}{OT1}{phv}{m}{it}
+    % \renewcommand{\familydefault}{\sfdefault}
+    % \def\rmdefault{phv}
+    % \DeclareSymbolFont{operators}{OT1}{phv}{m}{n}
+    % \DeclareSymbolFont{letters}{OT1}{phv}{m}{it}
+    % \DeclareSymbolFont{bold}{OT1}{phv}{bx}{n}
+    % \DeclareSymbolFont{italic}{OT1}{phv}{m}{it}
 
-      \makeatletter
-      \def\@listI{
-      \leftmargin 1.5em
-      \itemsep 0.2em
-      \parsep 0.2em
-      \topsep 0.2em
-      \partopsep 0.2em}
-      \def\@listii{
-      \leftmargin 1em
-      \itemsep 0.1em
-      \parsep 0.1em
-      \topsep 0.1em
-      \partopsep 0.1em}
-      \makeatother
+    \makeatletter
+    \def\@listI{
+    \leftmargin 1.5em
+    \itemsep 0.2em
+    \parsep 0.2em
+    \topsep 0.2em
+    \partopsep 0.2em}
+    \def\@listii{
+    \leftmargin 1em
+    \itemsep 0.1em
+    \parsep 0.1em
+    \topsep 0.1em
+    \partopsep 0.1em}
+    \makeatother
 
-      \def\labelitemi{\raisebox{0.5ex}{\hbox to 0.6em{\scalebox{1.3}{\ipesymbol{KITItem(f)}{}{\itemcolor}{}}}}}
+    \def\labelitemi{\raisebox{0.5ex}{\hbox to 0.6em{\scalebox{1.3}{\ipesymbol{KITItem(f)}{}{\itemcolor}{}}}}}
 
-      \def\labelitemii{\raisebox{0.5ex}{\hbox to 0.4em{\scalebox{1.1}{\ipesymbol{KITItem(f)}{}{\itemcolor}{}}}}}
-    </preamble>
+    \def\labelitemii{\raisebox{0.5ex}{\hbox to 0.4em{\scalebox{1.1}{\ipesymbol{KITItem(f)}{}{\itemcolor}{}}}}}
+  </preamble>
 <layout paper="800 600" origin="32 69" frame="736 440" crop="no"/>
 <titlestyle pos="0 475" size="largebf" color="black"  valign="baseline"/>
 </ipestyle>
@@ -2150,7 +2250,7 @@ h
 <layer name="pagenumbers_page" edit="no"/>
 <view layers="title BACKGROUND" active="title"/>
 <text layer="title" matrix="1 0 0 1 -213 -46" pos="213 427" stroke="black" type="label" width="422.041" height="21.1772" depth="6.116" valign="baseline" size="Large">\bf Template for Ipe Presentations</text>
-<text matrix="1 0 0 1 -213 -123" pos="213 427" stroke="black" type="label" width="241.993" height="13.0064" depth="3.036" valign="bottom" size="small">\bf Lecture $\,\cdot\,$ \today</text>
+<text matrix="1 0 0 1 -213 -123" pos="213 427" stroke="black" type="label" width="205.698" height="13.0064" depth="3.036" valign="bottom" size="small">\bf Lecture $\,\cdot\,$ \today</text>
 <text matrix="1 0 0 1 -213 -141" pos="213 427" stroke="black" type="label" width="79.6686" height="13.0086" depth="3.806" valign="baseline" size="small">\bf \name</text>
 <group layer="BACKGROUND" matrix="1 0 0 1 2 0">
 <path fill="KITblack50">
@@ -2188,9 +2288,22 @@ h
 <layer name="beta"/>
 <layer name="gamma"/>
 <layer name="pagenumbers_page" edit="no"/>
+<layer name="delta"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha beta pagenumbers_page" active="beta"/>
 <view layers="alpha gamma pagenumbers_page" active="gamma"/>
+<view layers="alpha pagenumbers_page delta" active="delta"/>
+<group layer="delta">
+<path stroke="black" fill="KITblue15">
+0 104 m
+728 104 l
+8 0 0 -8 728 96 736 96 a
+736 37.5006 l
+8 37.5006 l
+8 0 0 -8 8 45.5006 0 45.5006 a
+h
+</path>
+</group>
 <text layer="alpha" pin="h" pos="0 440" stroke="black" type="minipage" width="736" height="141.135" depth="129.213" valign="top">Settings that can be changed in the document properties\\
     (Edit$\rightarrow$Document properties or press Ctrl+Shift+P):
     \begin{itemize}
@@ -2242,6 +2355,10 @@ h
 -18.5764 30.261
 -12.8592 -27.6261 s
 </path>
+<text layer="delta" matrix="1 0 0 1 8 96" transformations="translations" pos="0 0" stroke="black" type="minipage" width="720" height="31.3404" depth="19.159" valign="top">To (semi-)automatically surround objects with simple KIT boxes use the
+decorator ipelet.  You can even define your own box types.
+</text>
+<text matrix="1 0 0 1 96.228 -96.643" transformations="translations" pos="224 112" stroke="black" type="label" width="412.52" height="10.81" depth="3.26" valign="baseline" size="footnote">https://algohub.iti.kit.edu/algo1/ipe/files/master/ipelets/decorator</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="5.8604" height="7.5463" depth="0" halign="center" valign="top" size="verytiny">{\bf 1}</text>
 </page>
 <page title="Some Tests">
