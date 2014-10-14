@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20090429144355" modified="D:20140612165455" title="Template for Ipe Presentations" author="My Name"/>
+<ipe version="70005" creator="Ipe 7.1.5">
+<info created="D:20090429144355" modified="D:20141014174614" title="Template for Ipe Presentations" author="My Name"/>
 <preamble>\usepackage[utf8]{inputenc}
-  \usepackage{amsmath,amssymb}
-  \renewcommand{\vec}[1]{\mathaccent&quot;017E {#1}}
+\usepackage{amsmath,amssymb}
+\renewcommand{\vec}[1]{\mathaccent&quot;017E {#1}}
 
-  % settings %%%%%%%%%%%%%%%
-  \newcommand{\itemcolor}{KITblue}
-  \newcommand{\name}{My Name}
-  \newcommand{\prestitle}{Template for Ipe Presentations}
-  % \german
-
+% settings %%%%%%%%%%%%%%%
+\newcommand{\itemcolor}{KITblue}
+\newcommand{\name}{My Name}
+\newcommand{\prestitle}{Template for Ipe Presentations}
+% \german
+% \dorothea % activate this only for lecture slides
   </preamble>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
@@ -2169,42 +2169,57 @@ h
     \usepackage{pgf}
     \usepackage[utf8]{inputenc}
 
+    % dorothea settings
+    \newif\ifdorothea%
+    \newcommand{\dorothea}{\dorotheatrue}%    
+
     % language settings
     \newif\ifgerman%
     \newcommand{\german}{\germantrue}%
+    \newcommand{\chair}{%
+      \ifdorothea%
+      Prof. Dr. Dorothea Wagner%
+      \else%
+      \ifgerman%
+      Lehrstuhl Algorithmik%
+      \else%
+      Algorithmics Group%
+      \fi%
+      \fi%
+    }
     \newcommand{\kitlogo}{%
-    \ifgerman%
-    \ipesymbol{KITLogoDE}{}{}{}\hspace{950pt}%
-    \else%
-    \ipesymbol{KITLogoEN}{}{}{}\hspace{950pt}%
-    \fi%
+      \ifgerman%
+      \ipesymbol{KITLogoDE}{}{}{}\hspace{950pt}%
+      \else%
+      \ipesymbol{KITLogoEN}{}{}{}\hspace{950pt}%
+      \fi%
     }%
     \newcommand{\helmholz}{%
-    \ifgerman%
-    KIT -- Universität des Landes Baden-Württemberg und\\
-    nationales Forschungszentrum in der Helmholtz-Gemeinschaft%
-    \else%
-    KIT -- University of the State of Baden-Wuerttemberg and\\
-    National Laboratory of the Helmholtz Association%
-    \fi%
+      \ifgerman%
+      KIT -- Universität des Landes Baden-Württemberg und\\
+      nationales Forschungszentrum in der Helmholtz-Gemeinschaft%
+      \else%
+      KIT -- University of the State of Baden-Wuerttemberg and\\
+      National Laboratory of the Helmholtz Association%
+      \fi%
     }%
     \newcommand{\algoinst}{%
-    \ifgerman%
-    {\sc Institut für Theoretische Informatik $\cdot$
-    Prof. Dr. Dorothea Wagner}%
-    \else%
-    {\sc Institute of Theoretical Informatics $\cdot$
-    Prof. Dr. Dorothea Wagner}%
-    \fi%
+      \ifgerman%
+      {\sc Institut für Theoretische Informatik $\cdot$
+        \chair}%
+      \else%
+      {\sc Institute of Theoretical Informatics $\cdot$
+        \chair}%
+      \fi%
     }%
     \newcommand{\algoinstfoot}{%
-    \ifgerman%
-    Institut für Theoretische Informatik\\
-    Prof. Dr. Dorothea Wagner
-    \else%
-    Institute of Theoretical Informatics\\
-    Prof. Dr. Dorothea Wagner%
-    \fi%
+      \ifgerman%
+      Institut für Theoretische Informatik\\
+      \chair%
+      \else%
+      Institute of Theoretical Informatics\\
+      \chair% 
+      \fi%
     }%
 
     \renewcommand{\familydefault}{\sfdefault}
@@ -2250,7 +2265,7 @@ h
 <layer name="pagenumbers_page" edit="no"/>
 <view layers="title BACKGROUND" active="title"/>
 <text layer="title" matrix="1 0 0 1 -213 -46" pos="213 427" stroke="black" type="label" width="422.041" height="21.1772" depth="6.116" valign="baseline" size="Large">\bf Template for Ipe Presentations</text>
-<text matrix="1 0 0 1 -213 -123" pos="213 427" stroke="black" type="label" width="205.698" height="13.0064" depth="3.036" valign="bottom" size="small">\bf Lecture $\,\cdot\,$ \today</text>
+<text matrix="1 0 0 1 -213 -123" pos="213 427" stroke="black" type="label" width="233.281" height="13.4596" depth="3.036" valign="bottom" size="small">\bf Lecture $\,\cdot\,$ \today</text>
 <text matrix="1 0 0 1 -213 -141" pos="213 427" stroke="black" type="label" width="79.6686" height="13.0086" depth="3.806" valign="baseline" size="small">\bf \name</text>
 <group layer="BACKGROUND" matrix="1 0 0 1 2 0">
 <path fill="KITblack50">
@@ -2276,7 +2291,7 @@ h
 </path>
 <text matrix="0.0614019 0 0 0.0614019 -14.7365 426.158" pos="240 144" stroke="black" type="label" width="2318.8" height="0" depth="0" valign="baseline">\kitlogo</text>
 <text matrix="1 0 0 1 -98 -201.642" pos="98 168" stroke="black" type="minipage" width="412" height="17.6088" depth="6.164" valign="top" size="verytiny">\helmholz</text>
-<text matrix="1 0 0 1 -22 -1" pos="24 232" stroke="white" type="label" width="442.436" height="9.296" depth="0.168" valign="center" size="tiny">\algoinst</text>
+<text matrix="1 0 0 1 -22 -1" pos="24 232" stroke="white" type="label" width="390.457" height="9.4388" depth="0.224" valign="center" size="tiny">\algoinst</text>
 <text matrix="1 0 0 1 149 -29.5" transformations="translations" pos="608 -16" stroke="white" type="label" width="105.167" height="13.244" depth="0.176" halign="right" valign="center" size="small">\bf www.kit.edu</text>
 </group>
 <text matrix="1 0 0 1 -213 -77" pos="213 427" stroke="black" type="label" width="188.329" height="21.186" depth="0.286" valign="baseline" size="Large">\bf Title 2nd Row</text>
@@ -2287,13 +2302,13 @@ h
 <layer name="alpha"/>
 <layer name="beta"/>
 <layer name="gamma"/>
-<layer name="pagenumbers_page" edit="no"/>
 <layer name="delta"/>
+<layer name="pagenumbers_page" edit="no"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha beta pagenumbers_page" active="beta"/>
 <view layers="alpha gamma pagenumbers_page" active="gamma"/>
-<view layers="alpha pagenumbers_page delta" active="delta"/>
-<group layer="delta">
+<view layers="alpha delta pagenumbers_page" active="delta"/>
+<group layer="beta">
 <path stroke="black" fill="KITblue15">
 0 104 m
 728 104 l
@@ -2305,24 +2320,24 @@ h
 </path>
 </group>
 <text layer="alpha" pin="h" pos="0 440" stroke="black" type="minipage" width="736" height="141.135" depth="129.213" valign="top">Settings that can be changed in the document properties\\
-    (Edit$\rightarrow$Document properties or press Ctrl+Shift+P):
-    \begin{itemize}
-    \item change the color of the item bullets:
-    \begin{itemize}
-    \item change definition of \textbackslash{itemcolor} (for example to
+(Edit$\rightarrow$Document properties or press Ctrl+Shift+P):
+\begin{itemize}
+\item change the color of the item bullets:
+  \begin{itemize}
+  \item change definition of \textbackslash{itemcolor} (for example to
     KITgreen)
-    \end{itemize}
-    \item change name and title in the footer:
-    \begin{itemize}
-    \item change definition of commands \textbackslash{}name and
+  \end{itemize}
+\item change name and title in the footer:
+  \begin{itemize}
+  \item change definition of commands \textbackslash{}name and
     \textbackslash{}prestitle
-    \end{itemize}
-    \item change the language:
-    \begin{itemize}
-    \item comment or uncomment the command \textbackslash{german}
-    \end{itemize}
-    \end{itemize}</text>
-<group layer="beta" matrix="1 0 0 1 0 32" pin="h">
+  \end{itemize}
+\item change the language:
+  \begin{itemize}
+  \item comment or uncomment the command \textbackslash{german}
+  \end{itemize}
+\end{itemize}</text>
+<group layer="gamma" matrix="1 0 0 1 0 32" pin="h">
 <path fill="KITblue">
 0 63.0802 m
 0 92 l
@@ -2346,19 +2361,19 @@ h
       </text>
 </group>
 <text layer="alpha" matrix="1 0 0 1 0 -282" pin="h" pos="0 440" stroke="black" type="minipage" width="736" height="16.7972" depth="4.557" valign="top">To modify the slide title, press Ctrl+P.</text>
-<text layer="beta" matrix="1 0 0 1 507.228 -95.4874" transformations="translations" pos="224 112" stroke="black" type="label" width="315.187" height="13.112" depth="3.784" halign="right" valign="baseline" size="small">box created with the presentation ipelet</text>
-<text matrix="1 0 0 1 507.228 -116.643" transformations="translations" pos="224 112" stroke="black" type="label" width="641.656" height="10.81" depth="3.26" halign="right" valign="baseline" size="footnote">http://lamut.informatik.uni-wuerzburg.de/mediawiki/ipe7/index.php/Graph\_Ipelet\#Presentation\_Ipelet</text>
-<text layer="gamma" matrix="1 0 0 1 -223.772 -60.4874" transformations="translations" pos="224 112" stroke="black" type="label" width="415.507" height="13.123" depth="4.026" valign="baseline" size="small">page numbers created with the Pagenumbers Ipelet</text>
-<text matrix="1 0 0 1 -223.772 -80.643" transformations="translations" pos="224 112" stroke="black" type="label" width="559.974" height="10.81" depth="3.26" valign="baseline" size="footnote">http://lamut.informatik.uni-wuerzburg.de/mediawiki/ipe7/index.php/Pagenumbers\_Ipelet</text>
+<text layer="gamma" matrix="1 0 0 1 507.228 -95.4874" transformations="translations" pos="224 112" stroke="black" type="label" width="315.187" height="13.112" depth="3.784" halign="right" valign="baseline" size="small">box created with the presentation ipelet</text>
+<text matrix="1 0 0 1 507.228 -116.643" transformations="translations" pos="224 112" stroke="black" type="label" width="436.482" height="10.81" depth="3.26" halign="right" valign="baseline" size="footnote">https://sourceforge.net/p/ipe7/wiki/Graph\_Ipelet/\#presentation-ipelet</text>
+<text layer="delta" matrix="1 0 0 1 -223.772 -60.4874" transformations="translations" pos="224 112" stroke="black" type="label" width="415.507" height="13.123" depth="4.026" valign="baseline" size="small">page numbers created with the Pagenumbers Ipelet</text>
+<text matrix="1 0 0 1 -223.772 -80.643" transformations="translations" pos="224 112" stroke="black" type="label" width="357.644" height="10.81" depth="3.26" valign="baseline" size="footnote">https://sourceforge.net/p/ipe7/wiki/Pagenumbers\_Ipelet/</text>
 <path stroke="black" pen="heavier" arrow="normal/normal">
 -1.78204 49.5567 m
 -18.5764 30.261
 -12.8592 -27.6261 s
 </path>
-<text layer="delta" matrix="1 0 0 1 8 96" transformations="translations" pos="0 0" stroke="black" type="minipage" width="720" height="31.3404" depth="19.159" valign="top">To (semi-)automatically surround objects with simple KIT boxes use the
+<text layer="beta" matrix="1 0 0 1 8 96" transformations="translations" pos="0 0" stroke="black" type="minipage" width="720" height="31.3404" depth="19.159" valign="top">To (semi-)automatically surround objects with simple KIT boxes use the
 decorator ipelet.  You can even define your own box types.
 </text>
-<text matrix="1 0 0 1 96.228 -96.643" transformations="translations" pos="224 112" stroke="black" type="label" width="412.52" height="10.81" depth="3.26" valign="baseline" size="footnote">https://algohub.iti.kit.edu/algo1/ipe/files/master/ipelets/decorator</text>
+<text matrix="1 0 0 1 176.228 -94.643" transformations="translations" pos="224 112" stroke="black" type="label" width="331.32" height="10.81" depth="3.26" valign="baseline" size="footnote">https://sourceforge.net/p/ipe7/wiki/Decorator\_Ipelet/</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="5.8604" height="7.5463" depth="0" halign="center" valign="top" size="verytiny">{\bf 1}</text>
 </page>
 <page title="Some Tests">
