@@ -1,0 +1,8 @@
+Ipe Stylesheet Collection
+
+
+*_papersize.isy
+
+Adjusts the Ipe canvas to the papersize with respect to the margins given by the respective format.
+thesis_papersize.isy - Papersize suitable for Bachelor / Masther Thesis
+lncs_papersize.isy - LNCS Paper size
