@@ -1,0 +1,4 @@
+**pdftoipe.sh**
+
+Converts a pdf to the ipe format using inkscape and svgtoipe. All objects are transformed to paths.
+
