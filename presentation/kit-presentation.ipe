@@ -208,6 +208,15 @@ h
 <color name="lightgray" value="0.827"/>
 <color name="lightgreen" value="0.565 0.933 0.565"/>
 <color name="lightyellow" value="1 1 0.878"/>
+<opacity name="10 percent" value="0.1" />
+<opacity name="20 percent" value="0.2" />
+<opacity name="30 percent" value="0.3" />
+<opacity name="40 percent" value="0.4" />
+<opacity name="50 percent" value="0.5" />
+<opacity name="60 percent" value="0.6" />
+<opacity name="70 percent" value="0.7" />
+<opacity name="80 percent" value="0.8" />
+<opacity name="90 percent" value="0.9" />
 <dashstyle name="dashed" value="[4] 0"/>
 <dashstyle name="dotted" value="[1 3] 0"/>
 <dashstyle name="dash dotted" value="[4 2 1 2] 0"/>
@@ -2171,7 +2180,7 @@ h
 
     % dorothea settings
     \newif\ifdorothea%
-    \newcommand{\dorothea}{\dorotheatrue}%    
+    \newcommand{\dorothea}{\dorotheatrue}%
 
     % language settings
     \newif\ifgerman%
@@ -2218,7 +2227,7 @@ h
       \chair%
       \else%
       Institute of Theoretical Informatics\\
-      \chair% 
+      \chair%
       \fi%
     }%
 
