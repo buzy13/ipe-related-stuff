@@ -2264,9 +2264,10 @@ h
       \draw [color=#1, fill=#1] (3.83122,15.32487) .. controls (1.71528,15.32487) and (0,13.60958) .. (0,11.49365) -- (0,0) -- (11.49364,0) .. controls (13.60958,0) and (15.32486,1.71528) .. (15.32486,3.83122) -- (15.32486,15.32487) -- (3.83122,15.32487) ;
     \end{tikzpicture}%
     }
-    \def\labelitemi{\KITItem{\itemcolor}{0.01}}
-
+    \def\labelitemi{\KITItem{\itemcolor}{0.012}}
     \def\labelitemii{\raisebox{0.2ex}{\KITItem{\itemcolor}{0.01}}}
+    \def\labelitemiii{\raisebox{0.25ex}{\KITItem{\itemcolor}{0.008}}}
+    
   </preamble>
 <layout paper="800 600" origin="32 69" frame="736 440" crop="no"/>
 <titlestyle pos="0 475" size="largebf" color="black"  valign="baseline"/>
