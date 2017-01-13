@@ -4,6 +4,7 @@
 <info created="D:20090429144355" modified="D:20141014174614" title="Template for Ipe Presentations" author="My Name"/>
 <preamble>\usepackage[utf8]{inputenc}
 \usepackage{amsmath,amssymb}
+\usepackage{tikz}
 \renewcommand{\vec}[1]{\mathaccent&quot;017E {#1}}
 
 % settings %%%%%%%%%%%%%%%
@@ -321,7 +322,7 @@ h
 -34 531 l
 h
 </path>
-<text matrix="0.0410872 0 0 0.0410872 627.139 450.083" pos="240 144" stroke="black" type="label" width="2318.8" height="0" depth="0" valign="baseline">\kitlogo</text>
+<text matrix="0.0410872 0 0 0.0410872 627.139 450.083" pos="240 144" stroke="black" type="label" width="2318.8" height="0" depth="0" valign="baseline">\kitlogo{5}</text>
 <text matrix="1 0 0 1 -98 -201.642" pos="106 168" stroke="black" type="minipage" width="497" height="10.7065" depth="0" valign="top" size="verytiny">\name \ -- \prestitle</text>
 <group matrix="1 0 0 1 129 -9.5">
 <group matrix="0.5 0 0 0.5 265.5 -52.5">
@@ -2196,11 +2197,11 @@ h
       \fi%
       \fi%
     }
-    \newcommand{\kitlogo}{%
+    \newcommand{\kitlogo}[1]{%
       \ifgerman%
-      \ipesymbol{KITLogoDE}{}{}{}\hspace{950pt}%
+      \includegraphics[scale=#1]{img/KITlogo_4c_deutsch}
       \else%
-      \ipesymbol{KITLogoEN}{}{}{}\hspace{950pt}%
+      \includegraphics[scale=#1]{img/KITlogo_4c_englisch}
       \fi%
     }%
     \newcommand{\helmholz}{%
@@ -2259,9 +2260,14 @@ h
     \partopsep 0.1em}
     \makeatother
 
-    \def\labelitemi{\raisebox{0.5ex}{\hbox to 0.6em{\scalebox{1.3}{\ipesymbol{KITItem(f)}{}{\itemcolor}{}}}}}
+    \newcommand{\KITItem}[2]{\begin{tikzpicture}[scale=#2]
+      \draw [color=#1, fill=#1, rotate=90] (15.32487,3.83122) .. controls (15.32487,1.71528) and (13.60958,0) .. (11.49365,0) -- (0,0) -- (0,11.49364) .. controls (0,13.60958) and (1.71528,15.32486) .. (3.83122,15.32486) -- (15.32486,15.32487) -- (15.32487,3.83122) ;
+    \end{tikzpicture}%
+    }
+    \def\labelitemi{\KITItem{\itemcolor}{0.012}}
+    \def\labelitemii{\raisebox{0.2ex}{\KITItem{\itemcolor}{0.01}}}
+    \def\labelitemiii{\raisebox{0.25ex}{\KITItem{\itemcolor}{0.008}}}
 
-    \def\labelitemii{\raisebox{0.5ex}{\hbox to 0.4em{\scalebox{1.1}{\ipesymbol{KITItem(f)}{}{\itemcolor}{}}}}}
   </preamble>
 <layout paper="800 600" origin="32 69" frame="736 440" crop="no"/>
 <titlestyle pos="0 475" size="largebf" color="black"  valign="baseline"/>
@@ -2298,7 +2304,7 @@ h
 -34 531 l
 h
 </path>
-<text matrix="0.0614019 0 0 0.0614019 -14.7365 426.158" pos="240 144" stroke="black" type="label" width="2318.8" height="0" depth="0" valign="baseline">\kitlogo</text>
+<text matrix="0.0614019 0 0 0.0614019 -14.7365 426.158" pos="240 144" stroke="black" type="label" width="2318.8" height="0" depth="0" valign="baseline">\kitlogo{5}</text>
 <text matrix="1 0 0 1 -98 -201.642" pos="98 168" stroke="black" type="minipage" width="412" height="17.6088" depth="6.164" valign="top" size="verytiny">\helmholz</text>
 <text matrix="1 0 0 1 -22 -1" pos="24 232" stroke="white" type="label" width="390.457" height="9.4388" depth="0.224" valign="center" size="tiny">\algoinst</text>
 <text matrix="1 0 0 1 149 -29.5" transformations="translations" pos="608 -16" stroke="white" type="label" width="105.167" height="13.244" depth="0.176" halign="right" valign="center" size="small">\bf www.kit.edu</text>

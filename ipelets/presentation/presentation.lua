@@ -446,10 +446,11 @@ local function create_boxed(model,values, pos, prim)
 		t.redo = function (t, doc)
 					 doc[t.pno]:replace(t.primary, t.final)
 				 end
+    model:runLatex() -- Necessary to re-set the resources!
 		model:register(t)
 	else
+    model:runLatex() -- Necessary to re-set the resources!
 		model:creation("create boxed text", obj)
-		-- model.doc:runLatex() -- may crash the thing
 	end
 end
 
@@ -533,8 +534,10 @@ local function create_tabbed(model,values, pos, prim)
 		t.redo = function (t, doc)
 					 doc[t.pno]:replace(t.primary, t.final)
 				 end
+    model:runLatex() -- Necessary to re-set the resources!
 		model:register(t)
 	else
+    model:runLatex() -- Necessary to re-set the resources!
 		model:creation("create tabbed text", obj)
 		-- model.doc:runLatex() -- may crash the thing
 	end
@@ -685,7 +688,7 @@ function _G.MODEL:action_edit()
 	local prim = p:primarySelection()
 	if not prim then
 	   self:presentation_backup_action_edit()
-	   return 
+	   return
 	end
 	local obj = p[prim]
 	if obj:type() == "group" then
@@ -764,7 +767,7 @@ function boxit(model)
 	elseif model.attributes.fill then
 		d:set("fill", indexOf(model.attributes.fill,colors) )
 	end
-	
+
 	if indexOf("boxborder",pens) then
 		d:set("pen", indexOf("boxborder",pens))
 	elseif model.attributes.pen then
@@ -816,4 +819,3 @@ methods = {
   { label = "Tabbed/Boxed Text", run=tabbedboxed},
   { label = "Deselect All", run=deselectAll},
 }
-

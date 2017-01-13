@@ -1,0 +1,8 @@
+Hi,
+
+in Ipe 7.2, we need to use \includegraphics to include the KIT logo (which was not available in Ipe 7.1). Unfortunately, the path that the LaTeX process used by ipe searches for images is currently a bit weird (see [0]). Until this is fixed in Ipe, you need to either copy or link the "img" subfolder into a path that the LaTeX process searches. I suggest using "~/.ipe/latexrun" on Linux systems.
+
+Lukas
+
+
+[0] https://github.com/otfried/ipe-issues/issues/99#issuecomment-249815917
